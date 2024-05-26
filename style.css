@@ -35,6 +35,15 @@
   transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
 }
 
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Optional: Add some margin for spacing if needed */
+  padding-bottom: 30px;
+}
+
+
 /* Links */
 a {
   color: white; /* Cor dos links */
@@ -54,6 +63,8 @@ html {
 
 /* Seção Home */
 .home {
+  padding-top: 40px;
+  padding-bottom: 650px;
   display: flex; /* Layout flexbox */
   background: -webkit-gradient(
     linear,
