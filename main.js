@@ -2,7 +2,7 @@ const botaoDisqueDenuncia = document.getElementById('botaoDisqueDenuncia');
 
 botaoDisqueDenuncia.addEventListener('click', function() {
   // Número de telefone com DDD e sem hífens
-  const numeroWhatsApp = '551132305156';
+  const numeroWhatsApp = '5511996110100';
   // Texto de abertura da conversa (opcional)
   const textoMensagem = 'Gostaria de denunciar algo...';
 

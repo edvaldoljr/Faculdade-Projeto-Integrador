@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap");
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Reset de estilos padrão */
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +9,9 @@
   text-decoration: none;
 }
 
+/* Botão Disque Denúncia */
 #botaoDisqueDenuncia {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif; /* Define a fonte do botão */
   position: fixed; /* Posicionamento fixo na tela */
   bottom: 20px; /* Posiciona na parte inferior da tela */
   right: 20px; /* Posiciona na extremidade direita */
@@ -18,7 +22,7 @@
   font-size: 18px; /* Tamanho da fonte */
   text-align: center; /* Alinha o texto no centro */
   padding: 10px 10px; /* Espaçamento interno */
-  border: 1px solid #000000;
+  border: 1px solid #000000; /* Borda do botão */
   border-radius: 10px; /* Arredonda os cantos do botão */
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); /* Efeito de sombra */
   cursor: pointer; /* Indicador de cursor para clique */
@@ -26,50 +30,53 @@
   transition: all 0.5s ease; /* Definição de transição para animação */
 }
 
-#botaoDisqueDenuncia:hover {
-  background-color: #c00; /* Cor de fundo vermelha mais escura ao passar o mouse */
+#botaoDisqueDenuncia:hover { /* Efeito hover do botão */
+  background-color: #c00; /* Cor de fundo vermelha mais escura */
   transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
 }
 
+/* Links */
 a {
-  color: white;
+  color: white; /* Cor dos links */
 }
 
+/* Scroll suave na página */
 html {
   scroll-behavior: smooth;
 }
 
+/* Largura máxima da seção principal */
 .home-width {
-  max-width: 1300px;
-  padding: 0 80px;
-  margin: auto;
+  max-width: 1300px; /* Largura máxima da seção */
+  padding: 0 80px; /* Espaçamento interno horizontal */
+  margin: auto; /* Centraliza a seção na tela */
 }
 
-/*  Home   inicio  */
+/* Seção Home */
 .home {
-  display: flex;
+  display: flex; /* Layout flexbox */
   background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.7)),
-      to(rgba(0, 0, 0, 0.7))
-    ),
-    url(img/img-imagem-vermelha-maos.webp) no-repeat;
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0.7)),
+    to(rgba(0, 0, 0, 0.7))
+  ),
+  url('img/img-imagem-vermelha-maos.webp') no-repeat; /* Imagem de fundo */
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/img-imagem-vermelha-maos.webp) no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
-  min-height: 500px;
-  font-family: "Ubuntu", sans-serif;
+    url('img/img-imagem-vermelha-maos.webp') no-repeat; /* Imagem de fundo */
+  background-size: cover; /* Tamanho da imagem de fundo */
+  background-position: center; /* Posição da imagem de fundo */
+  background-attachment: fixed; /* Imagem de fundo fixa */
+  height: 100vh; /* Altura da seção */
+  min-height: 500px; /* Altura mínima da seção */
+  font-family: 'Ubuntu', sans-serif; /* Define a fonte da seção */
 }
 
-.home-h1 {
-  font-size: 60px;
-  color: antiquewhite;
-  padding-bottom: 30px;
+.home-h1 { /* Título principal da seção Home */
+  font-size: 60px; /* Tamanho da fonte do título */
+  color: antiquewhite; /* Cor do título */
+  padding-bottom: 30px; /* Espaçamento inferior do título */
 }
 
 .home-p {
@@ -99,84 +106,96 @@ html {
   padding-top: 30px;
 }
 
+/* Estilos para o título principal da seção de apresentação */
 .apresentação-h1 {
-  font-size: 50px;
-  color: antiquewhite;
-  padding-bottom: 30px;
+  font-size: 50px; /* Tamanho da fonte do título */
+  color: antiquewhite; /* Cor do texto do título */
+  padding-bottom: 30px; /* Espaçamento inferior do título */
 }
 
+/* Estilos para parágrafos da seção de apresentação */
 .apresentação-p {
-  font-size: 22px;
-  color: blanchedalmond;
+  font-size: 22px; /* Tamanho da fonte do parágrafo */
+  color: blanchedalmond; /* Cor do texto do parágrafo */
 }
 
+/* Container para seções de furtos */
 .furtos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: flex; /* Ativa layout flexbox */
+  flex-direction: column; /* Define a direção do layout flexbox como coluna */
+  align-items: center; /* Alinha itens no centro horizontalmente */
+  justify-content: center; /* Alinha itens no centro verticalmente */
 }
 
+/* Título principal da seção de furtos */
 .furtos-h1 {
-  font-size: 50px;
+  font-size: 50px; /* Tamanho da fonte do título */
   text-align: center; /* Centraliza o texto do título */
 }
 
+/* Imagem de furtos */
 .img-furtos {
   display: block; /* Garante que a imagem seja tratada como um bloco */
   margin: 0 auto; /* Centraliza a imagem horizontalmente */
-  width: 40rem;
+  width: 40rem; /* Largura da imagem */
 }
 
+/* Imagem de furtos para mês específico */
 .img-furtos-mes {
   display: block; /* Garante que a imagem seja tratada como um bloco */
   margin: 0 auto; /* Centraliza a imagem horizontalmente */
-  width: 50rem;
+  width: 50rem; /* Largura da imagem */
 }
 
+/* Estilos para parágrafos de análise dentro de gráficos de dados criminais */
 .dados-criminais-grafico .analise1-p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  color: black;
-  padding-left: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  display: flex; /* Ativa layout flexbox */
+  align-items: center; /* Alinha itens no centro horizontalmente */
+  justify-content: center; /* Alinha itens no centro verticalmente */
+  font-size: 25px; /* Tamanho da fonte do parágrafo */
+  color: black; /* Cor do texto do parágrafo */
+  padding-left: 30px; /* Espaçamento à esquerda do texto */
+  padding-top: 30px; /* Espaçamento superior do texto */
+  padding-bottom: 30px; /* Espaçamento inferior do texto */
 }
 
+/* Ajuste de espaçamento superior do título principal em gráficos de dados criminais */
 .dados-criminais-grafico .furtos-h1 {
-  padding-top: 35px;
+  padding-top: 35px; /* Espaçamento superior do título */
 }
 
+/* Título principal para seção de cada mês */
 .mes-h2 {
-  font-size: 40px;
+  font-size: 40px; /* Tamanho da fonte do título */
   text-align: center; /* Centraliza o texto do título */
 }
 
+/* Remover marcadores padrão de listas */
 ul {
   list-style-type: none; /* Remove os pontos pretos da lista */
 }
 
+/* Container para seções de crimes */
 .secao-crimes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 20px;
-  font-size: 20px;
+  display: flex; /* Ativa layout flexbox */
+  flex-wrap: wrap; /* Permite quebrar linhas na flexbox */
+  justify-content: space-around; /* Distribui itens com espaçamento uniforme */
+  margin: 20px; /* Espaçamento em torno da seção */
+  font-size: 20px; /* Tamanho da fonte do texto dentro da seção */
 }
 
+/* Estilos para cada seção de crime */
 .crime {
-  flex: 1 0 300px; /* Largura mínima de 300px */
-  padding: 15px;
-  border: 1px solid #000000;
-  text-align: center;
+  flex: 1 0 300px; /* Define largura mínima de 300px para cada seção */
+  padding: 15px; /* Espaçamento dentro da seção */
+  border: 1px solid #000000; /* Borda preta em torno da seção */
+  text-align: center; /* Centraliza o texto dentro da seção */
 }
 
+/* Estilos para seção de estupro */
 #estupro {
-  background-color: #f00; /* Vermelho */
-  background-image: url(/img/img-violencia-vidro-quebrado.png) ;
-  
+  background-color: #f00; /* Cor de fundo vermelha */
+  background-image: url(/img/img-violencia-vidro-quebrado.png); /* Imagem de fundo */
 }
 
 #furto {
@@ -198,4 +217,10 @@ ul {
 .ano{
   padding: 35px;
   text-align: center;
+}
+
+.foolder {
+  border: 1px solid #ccc; /* Borda para visualização */
+  padding: 15px; /* Espaçamento interno */
+  margin-bottom: 20px; /* Espaçamento entre "foolders" */
 }
