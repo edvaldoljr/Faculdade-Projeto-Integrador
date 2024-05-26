@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,8 +10,10 @@
   </head>
   <body>
     <header>
+      <div id="botaoDisqueDenuncia">Disque Denúncia</div>
+
       <!--home inicio-->
-      <section class="home" id="home">
+      <section class="home">
         <div class="home-width">
           <div class="home-content">
             <h1 class="home-h1">
@@ -41,8 +43,21 @@
               Campinas: Uma cidade em constante evolução na luta contra a criminalidade
             </h1>
             <div class="apresentação-p">
+              <p>
+                <br><br>- Este documento apresenta uma análise aprofundada dos dados de crimes em Campinas no ano de 2023, 
+                utilizando informações obtidas da base de dados da Polícia Civil do Estado de São Paulo. 
+                O objetivo é identificar tendências, padrões e períodos de maior incidência criminal,
+                 fornecendo subsídios 
+                para a implementação de medidas de prevenção e combate à criminalidade na cidade.
+              </p><br>
+              <p><a href="https://www.ssp.sp.gov.br/estatistica/painel-estatistico" target="_blank">www.ssp.sp.gov.br/estatistica/painel-estatistico</a>
+              </p><br><br>
+              <hr>
                 <p>
-                  <br><br>- Ao fazer essas analises podemos identificar áreas com maior incidência de determinados tipos de crimes, como furtos, roubos e tráfico de drogas. Essa análise nos permite mapear áreas prioritárias para ações de policiamento ostensivo e preventivo, focando em locais que concentram os maiores índices de criminalidade.
+                  <br><br>- Ao fazer essas analises podemos identificar períodos com maior incidência de determinados 
+                  tipos de crimes, como furtos e roubos. Essa análise nos permite mapear áreas 
+                  prioritárias para ações de policiamento ostensivo e preventivo, 
+                  focando em locais que concentram os maiores índices de criminalidade.
                 </p><br><br>
                 <hr>
                 <br><br>- Ao disponibilizar informações sobre crimes de forma acessível e compreensível, podemos promover o engajamento da comunidade na questão da segurança. Isso permite que os residentes estejam mais informados sobre os desafios enfrentados pela cidade e incentivem a colaboração com as autoridades locais na prevenção e combate ao crime.<br><br>
@@ -64,24 +79,52 @@
       <section class="dados-criminais-grafico">
         <h1 class="furtos-h1">Análise de dados Crimes por Mês e Natureza </h1>
         <p class="analise1-p">Na análise anterior, apresentamos as taxas de crimes do ano inteiro em Campinas. Agora, aprofundando a análise, vamos explorar este gráfico que apresenta a frequência de crimes por tipo de crime e por mês durante o último ano. <br> Em um mergulho profundo na criminalidade de Campinas, vamos além das taxas anuais e exploramos a riqueza de detalhes revelada por este gráfico. Aqui, desvendamos a frequência de crimes por tipo e por mês durante o último ano, traçando um panorama revelador da dinâmica criminal na cidade.</p>
-        <img class="img-furtos" src="img/grafico-analise-crimes-mensal.png" alt="">
+        <img class="img-furtos-mes" src="img/grafico-analise-crimes-mensal.png" alt="">
         <br><br>
         <h2 class="mes-h2">Conclusões Detalhadas por Mês: Desvendando a Dinâmica da Criminalidade em Campinas</h2><br><br>
-        <p class="mes-p">
-            <b>Março, Maio e Julho:</b><br><br>
-               <b>Furtos:</b> Picos de furtos, com destaque para furtos de veículos. <br><br>
-               <b>Roubos:</b> Aumento da incidência de roubos, incluindo roubos a banco. <br><br>
-               <b>Homicídios Dolosos:</b> Elevação do número de homicídios. <br><br>
-            <br>
-             <b>Abril, Junho e Agosto:</b><br><br>
-               <b>Estupro de Vulnerável:</b> Maior frequência de estupros contra pessoas em situação de vulnerabilidade.<br><br>
-            <br>
-             <b>Novembro e Dezembro:</b><br><br>
-               <b>Lesão Corporal Seguida de Morte:</b> Aumento de lesões corporais com consequências fatais. <br><br>
-               <b>Roubos:</b> Picos de roubos, incluindo roubos a banco.<br><br>
-          </p>
-      </section>
-      <hr>
+        </section>
+        <section>
+          <section class="secao-crimes">
+          
+            <div class="crime" id="estupro">
+              <h2>Estupro</h2>
+              <ul>
+                <li>Tendência: Decrescente (exceto abril e junho)</li>
+                <li>Menor número: Dezembro (250 casos)</li>
+                <li>Maior número: Abril (500 casos)</li>
+              </ul>
+            </div>
+          
+            <div class="crime" id="furto">
+              <h2>Furto</h2>
+              <ul>
+                <li>Tendência: Decrescente (exceto março)</li>
+                <li>Menor número: Dezembro (1.000 casos)</li>
+                <li>Maior número: Março (2.500 casos)</li>
+              </ul>
+            </div>
+          
+            <div class="crime" id="violencia">
+              <h2>Violência</h2>
+              <ul>
+                <li>Tendência: Decrescente (exceto fevereiro)</li>
+                <li>Menor número: Dezembro (500 casos)</li>
+                <li>Maior número: Fevereiro (1.500 casos)</li>
+              </ul>
+            </div>
+          
+            <div class="crime" id="roubo">
+              <h2>Roubo</h2>
+              <ul>
+                <li>Tendência: Decrescente (exceto janeiro)</li>
+                <li>Menor número: Dezembro (1.000 casos)</li>
+                <li>Maior número: Janeiro (2.000 casos)</li>
+              </ul>
+            </div>
+          </section>
+          <hr>
+          <h2 class="ano">@2024</h2><br>
+          <script src="main.js"></script>
     </header>
   </body>
 </html>

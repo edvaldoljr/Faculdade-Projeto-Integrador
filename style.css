@@ -6,6 +6,35 @@
   text-decoration: none;
 }
 
+#botaoDisqueDenuncia {
+  font-family: "Ubuntu", sans-serif;
+  position: fixed; /* Posicionamento fixo na tela */
+  bottom: 20px; /* Posiciona na parte inferior da tela */
+  right: 20px; /* Posiciona na extremidade direita */
+  width: 130px; /* Largura do botão */
+  height: 60px; /* Altura do botão */
+  background-color: #f00; /* Cor de fundo vermelha */
+  color: rgb(44, 35, 35); /* Cor da letra branca */
+  font-size: 18px; /* Tamanho da fonte */
+  text-align: center; /* Alinha o texto no centro */
+  padding: 10px 10px; /* Espaçamento interno */
+  border: 1px solid #000000;
+  border-radius: 10px; /* Arredonda os cantos do botão */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); /* Efeito de sombra */
+  cursor: pointer; /* Indicador de cursor para clique */
+  z-index: 1000; /* Posiciona o botão acima de outros elementos */
+  transition: all 0.5s ease; /* Definição de transição para animação */
+}
+
+#botaoDisqueDenuncia:hover {
+  background-color: #c00; /* Cor de fundo vermelha mais escura ao passar o mouse */
+  transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+a {
+  color: white;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -38,13 +67,13 @@ html {
 }
 
 .home-h1 {
-  font-size: 50px;
+  font-size: 60px;
   color: antiquewhite;
   padding-bottom: 30px;
 }
 
 .home-p {
-  font-size: 20px;
+  font-size: 22px;
   color: blanchedalmond;
 }
 
@@ -64,19 +93,20 @@ html {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  height: 150vh;
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
+  padding-top: 30px;
 }
 
 .apresentação-h1 {
   font-size: 50px;
-  color: rgb(249, 250, 247);
+  color: antiquewhite;
   padding-bottom: 30px;
 }
 
 .apresentação-p {
-  font-size: 20px;
+  font-size: 22px;
   color: blanchedalmond;
 }
 
@@ -95,6 +125,13 @@ html {
 .img-furtos {
   display: block; /* Garante que a imagem seja tratada como um bloco */
   margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  width: 40rem;
+}
+
+.img-furtos-mes {
+  display: block; /* Garante que a imagem seja tratada como um bloco */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  width: 50rem;
 }
 
 .dados-criminais-grafico .analise1-p {
@@ -112,13 +149,53 @@ html {
   padding-top: 35px;
 }
 
-.mes-p {
-  text-align: center;
-  font-size: 23px;
-}
-
-
 .mes-h2 {
   font-size: 40px;
   text-align: center; /* Centraliza o texto do título */
+}
+
+ul {
+  list-style-type: none; /* Remove os pontos pretos da lista */
+}
+
+.secao-crimes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.crime {
+  flex: 1 0 300px; /* Largura mínima de 300px */
+  padding: 15px;
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+#estupro {
+  background-color: #f00; /* Vermelho */
+  background-image: url(/img/img-violencia-vidro-quebrado.png) ;
+  
+}
+
+#furto {
+  background-color: #0f0; /* Verde */
+  background-image: url(/img/img-violencia-vidro-quebrado.png) ;
+}
+
+#violencia {
+  background-color: #00f; /* Azul */
+  background-image: url(/img/img-violencia-vidro-quebrado.png) ;
+}
+
+#roubo {  
+  background-color: #ff0; /* Amarelo */
+  background-image: url(/img/img-violencia-vidro-quebrado.png) ;
+  
+}
+
+.ano{
+  padding: 35px;
+  text-align: center;
 }
